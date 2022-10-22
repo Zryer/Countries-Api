@@ -1,0 +1,4 @@
+.continentSpinner {
+    --bs-spinner-width: 10rem !important;
+    --bs-spinner-height: 10rem !important;
+}

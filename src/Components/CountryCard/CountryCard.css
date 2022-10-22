@@ -1,0 +1,21 @@
+#countryCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    border: none;
+}
+
+#countryCard:hover {
+    background-color: #e7e7e7;
+}
+
+.countryCardLink {
+    text-decoration: none;
+    color: #000;
+}
+
+.countryCardLink:hover {
+    color: #000;
+}

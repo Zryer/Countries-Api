@@ -1,0 +1,68 @@
+#searchButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchButton {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    background: rgb(99,172,229);
+    background: linear-gradient(135deg, rgba(99,172,229,1) 10%, rgba(87,154,205,1) 60%, rgba(75,134,180,1) 100%);
+    color: #FFF;
+    border: none;
+    outline: none;
+    box-shadow: 10px 10px 5px rgba(0,0,0,.3);
+}
+
+#searchButton:hover {
+    background: linear-gradient(135deg, rgba(99,172,229,.7) 10%, rgba(87,154,205,.7) 60%, rgba(75,134,180,.7) 100%)
+}
+
+.carousel-control-next-icon {
+    background-color: black !important;
+}
+
+.contactButtons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.homeButton:hover {
+    opacity: 85%;
+}
+
+.homeButton:hover>.buttonIcon {
+    animation: iconMove;
+    animation-duration: 3.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+
+@keyframes iconMove {
+    0% {
+        transform: translateY(0);
+    }
+
+    6.25% {
+        transform: translateY(-30px);
+    }
+
+    12.5% {
+        transform: translateY(0);
+    }
+
+    18.75% {
+        transform: translateY(-15px);
+    }
+
+    25% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

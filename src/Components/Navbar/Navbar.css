@@ -1,0 +1,26 @@
+.naviLink {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.naviLink:hover {
+    color: #FFF;
+}
+
+.naviContainer {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between !important;
+}
+
+.naviCon {
+    justify-content: space-evenly !important;
+}
+
+#mainNav {
+    background-color: #63ace5;
+    
+}
