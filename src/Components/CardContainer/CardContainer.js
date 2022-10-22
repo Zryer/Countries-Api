@@ -8,22 +8,25 @@ const CardContainer = ({ countryData }) => {
     let listCardData = "";
     const singleCardData = countryData[0];
     const objectKeys = Object.keys(countryData);
-    const newList = [...objectKeys];
+    const id = [...objectKeys];
+    const newCountry = [...objectKeys];
+    const keys = [...objectKeys];
 
-    const newer = () => {
-        newList.forEach(item => {return item})
-    }
-
-    const saveCountryData = (value) => {
-        console.log(value)
-        window.sessionStorage.setItem(`${countryData[value].name.common}`, JSON.stringify(countryData[value]))
+    const saveCountryData = (val) => {
+        console.log(val)
+        if (sessionStorage.getItem(`${countryData[val].name.common}`) !== null){
+            console.log("already exists")
+        } else {
+            console.log("added")
+        window.sessionStorage.setItem(`${countryData[val].name.common}`, JSON.stringify(countryData[val]))
+        }
     }
 
     if (countryData.length > 1 && objectKeys !== undefined) {
-        listCardData = countryData.map(() => <Col key={newer()} xs={12} md={4} lg={3} style={{ marginTop: "1rem"}}><CountryCard objectKey={[...objectKeys]} countryData={countryData[objectKeys.pop()]} saveCountry={saveCountryData} /></Col>)
+        listCardData = countryData.map(() => <Col key={keys.pop()} xs={12} md={4} lg={3} style={{ marginTop: "1rem"}}><CountryCard objectKey={id.pop()} countryData={countryData[newCountry.pop()]} saveCountry={saveCountryData} /></Col>)
         return (
             <Container>
-                <Row> 
+                <Row>
                     {listCardData}
                 </Row>
             </Container>

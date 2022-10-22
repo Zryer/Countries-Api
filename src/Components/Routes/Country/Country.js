@@ -18,8 +18,6 @@ const Country = () => {
     navigate(-1)
   }
 
-  console.log(result)
-
   if (!result) {
     return (
       <h2>No country yet!</h2>

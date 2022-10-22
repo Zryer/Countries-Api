@@ -3,17 +3,12 @@ import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import ClearButton from '../../Assets/ClearButton/ClearButton';
-import SearchButton from '../../Assets/SearchButton/SearchButton';
 import axios from 'axios';
 import CardContainer from '../../CardContainer/CardContainer';
 
 const SearchInput = ({ countryData }) => {
 
   const [filteredList, setFilteredList ] = useState();
-
-  console.log(countryData);
-  console.log(filteredList)
 
 const filterBySearch = (e) => {
   const search = e.target.value;

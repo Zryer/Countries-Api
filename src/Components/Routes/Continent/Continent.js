@@ -3,7 +3,6 @@ import axios from "axios";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import { useEffect, useState } from "react";
-import SavedCard from "../../SavedCard/SavedCard";
 import CardContainer from "../../CardContainer/CardContainer";
 import CountryCard from "../../CountryCard/CountryCard";
 import Spinner from "react-bootstrap/Spinner";

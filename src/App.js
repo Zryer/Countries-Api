@@ -22,7 +22,6 @@ const App = () => {
 
     try {
       const countryResponse = await axios.get(nameSearchString);
-      console.log(countryResponse.data);
       return setCountryData(countryResponse.data);
     } catch (error) {
       console.log("There is an error");
